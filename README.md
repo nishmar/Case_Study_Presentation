@@ -22,4 +22,19 @@ Output of deception_classification.py:
 - Saves output to csv file specified on input to script (--out)
 - classifier_test.csv : example output file 
 
+<b> sensitive_write_features.R </b>
+
+Extracts information from file names and constructs CSV file for use in question sensitivity analyses. 
+
+Output: 
+
+- chunk_features_sensitivity : folder containing sample output for one of the feature sets
+
+<b> sensitive_feature_analysis.R </b>
+
+R script that takes in as input output files from previous R script. Performs question sensitivity x deceptive cue MANOVA and posthoc analyses. Outputs plots and CSV files with significant results.
+
+Output of sensitive_feature_analysis.R:
+- interactive_plots : folder containing plots
+- RESULTS_chunk : folder contianing sample output for one of the feature sets
 
